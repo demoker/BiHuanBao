@@ -1,0 +1,20 @@
+//
+//  CouponListViewController.h
+//  BiHuanBao
+//
+//  Created by 马东凯 on 14/12/9.
+//  Copyright (c) 2014年 demoker. All rights reserved.
+//
+
+#import "BaseViewController.h"
+#import "CollectionView.h"
+@interface CouponListViewController : BaseViewController<UITableViewDataSource,UITableViewDelegate,TableViewDelegate>
+{
+    int more;
+}
+@property (weak, nonatomic) IBOutlet TableView *mtableview;
+@property (retain, nonatomic) NSMutableArray * dataarray;
+@property (assign, nonatomic) id delegate;
+@property (retain, nonatomic) NSString * task;
+- (void)update;
+@end

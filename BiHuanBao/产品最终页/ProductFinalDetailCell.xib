@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ProductFinalDetailCell" rowHeight="84" id="KGk-i7-Jjw" customClass="ProductFinalDetailCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="购买须知" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZh-tI-2d0">
+                        <rect key="frame" x="16" y="8" width="57" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="购买须知的详细内容购买须知的详细内容购买须知的详细内容购买须知的详细内容" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XdI-Hl-b8l">
+                        <rect key="frame" x="16" y="23" width="243" height="53"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product_detail.png" translatesAutoresizingMaskIntoConstraints="NO" id="HuT-ah-7kX">
+                        <rect key="frame" x="272" y="22" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Wx5-JB-A5w"/>
+                            <constraint firstAttribute="width" constant="40" id="Y5W-ee-8fe"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="level_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Qj-8b-zRu">
+                        <rect key="frame" x="0.0" y="83" width="320" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="JJW-Kf-X1R"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="level_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="Yxi-mC-ovT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="wDc-ny-165"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="7Qj-8b-zRu" secondAttribute="trailing" constant="-8" id="2eg-3E-qvp"/>
+                    <constraint firstItem="HuT-ah-7kX" firstAttribute="top" secondItem="Yxi-mC-ovT" secondAttribute="bottom" constant="21" id="47I-Ct-ZXM"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Yxi-mC-ovT" secondAttribute="trailing" constant="-8" id="C70-dW-sLx"/>
+                    <constraint firstItem="7Qj-8b-zRu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="Fbd-hG-O2I"/>
+                    <constraint firstItem="HuT-ah-7kX" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="HMq-qp-qRT"/>
+                    <constraint firstItem="7Qj-8b-zRu" firstAttribute="top" secondItem="HuT-ah-7kX" secondAttribute="bottom" constant="21" id="QOM-GV-UYJ"/>
+                    <constraint firstItem="Yxi-mC-ovT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="bbj-cK-55p"/>
+                    <constraint firstItem="Yxi-mC-ovT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="rnB-of-Oo1"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="7Qj-8b-zRu" secondAttribute="bottom" constant="-8.5" id="zFd-RA-ryj"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="QOM-GV-UYJ"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="content_desc" destination="XdI-Hl-b8l" id="5f2-bq-Qho"/>
+                <outlet property="detail_btn" destination="HuT-ah-7kX" id="KH0-o0-haE"/>
+            </connections>
+            <point key="canvasLocation" x="186" y="144"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="level_line.png" width="1" height="1"/>
+        <image name="product_detail.png" width="213" height="213"/>
+    </resources>
+</document>

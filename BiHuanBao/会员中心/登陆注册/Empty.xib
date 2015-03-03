@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="QTs-9W-W9d" customClass="RegistView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="360"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" tag="101" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入密码" minimumFontSize="17" background="login_input.png" translatesAutoresizingMaskIntoConstraints="NO" id="ez9-Gp-Li5" customClass="ELTextField">
+                    <rect key="frame" x="30" y="99" width="260" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="next" secureTextEntry="YES"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" tag="104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号" minimumFontSize="17" background="login_input.png" translatesAutoresizingMaskIntoConstraints="NO" id="pF6-Am-NMv" customClass="ELTextField">
+                    <rect key="frame" x="30" y="215" width="260" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEs-lK-moF">
+                    <rect key="frame" x="30" y="319" width="260" height="31"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="提交" backgroundImage="yuyue_btn.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="Regist:" destination="QTs-9W-W9d" eventType="touchUpInside" id="NxE-1m-Hu0"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="restar.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Ah-TE-0tg">
+                    <rect key="frame" x="302" y="150" width="10" height="10"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="restar.png" translatesAutoresizingMaskIntoConstraints="NO" id="hDm-H2-wy0">
+                    <rect key="frame" x="302" y="109" width="10" height="10"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" tag="105" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入验证码" minimumFontSize="17" background="login_input.png" translatesAutoresizingMaskIntoConstraints="NO" id="NX3-cu-AEc" customClass="ELTextField">
+                    <rect key="frame" x="30" y="253" width="120" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done"/>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="restar.png" translatesAutoresizingMaskIntoConstraints="NO" id="6cV-nw-hA0">
+                    <rect key="frame" x="302" y="69" width="10" height="10"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" tag="102" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请再次输入密码" minimumFontSize="17" background="login_input.png" translatesAutoresizingMaskIntoConstraints="NO" id="6rZ-Oo-1uT" customClass="ELTextField">
+                    <rect key="frame" x="30" y="140" width="260" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="next" secureTextEntry="YES"/>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="restar.png" translatesAutoresizingMaskIntoConstraints="NO" id="8dC-6Y-xis">
+                    <rect key="frame" x="302" y="225" width="10" height="10"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="restar.png" translatesAutoresizingMaskIntoConstraints="NO" id="7lw-bh-js2">
+                    <rect key="frame" x="302" y="263" width="10" height="10"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" tag="103" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="邮箱" minimumFontSize="17" background="login_input.png" translatesAutoresizingMaskIntoConstraints="NO" id="Aog-9O-ykr" customClass="ELTextField">
+                    <rect key="frame" x="30" y="178" width="260" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="next"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAq-OM-iLO">
+                    <rect key="frame" x="173" y="253" width="117" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="获取验证码" backgroundImage="orange_btn.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MfY-Cm-aMM">
+                    <rect key="frame" x="0.0" y="9" width="320" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4xD-L1-yrr">
+                            <rect key="frame" x="36" y="11" width="76" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="contentEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-10" maxY="0.0"/>
+                            <state key="normal" title="买家" image="login_selected.png">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cfr-j3-hFh">
+                            <rect key="frame" x="160" y="11" width="76" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="contentEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-10" maxY="0.0"/>
+                            <state key="normal" title="商家" image="login_no_selected.png">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <textField opaque="NO" clipsSubviews="YES" tag="100" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="用户名" minimumFontSize="17" background="login_input.png" translatesAutoresizingMaskIntoConstraints="NO" id="8G9-fp-pjw" customClass="ELTextField">
+                    <rect key="frame" x="30" y="59" width="260" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="next"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="CodeBtn" destination="VAq-OM-iLO" id="OQ3-m5-S1q"/>
+                <outlet property="buyer" destination="4xD-L1-yrr" id="48Y-kn-KfL"/>
+                <outlet property="corper" destination="Cfr-j3-hFh" id="8eP-pC-SXN"/>
+                <outlet property="emailTextField" destination="Aog-9O-ykr" id="qiE-dl-wEH"/>
+                <outlet property="pwdTextField" destination="ez9-Gp-Li5" id="CZz-Uc-VCI"/>
+                <outlet property="teleTextField" destination="pF6-Am-NMv" id="a5X-SW-GoR"/>
+                <outlet property="twopwdTextField" destination="6rZ-Oo-1uT" id="rG4-tD-5VI"/>
+                <outlet property="userTextField" destination="8G9-fp-pjw" id="xuf-MR-Rz6"/>
+                <outlet property="verificationTextField" destination="NX3-cu-AEc" id="wS4-pz-Pda"/>
+            </connections>
+            <point key="canvasLocation" x="45" y="116"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_input.png" width="821" height="96"/>
+        <image name="login_no_selected.png" width="20" height="20"/>
+        <image name="login_selected.png" width="20" height="20"/>
+        <image name="orange_btn.png" width="420" height="119"/>
+        <image name="restar.png" width="15" height="15"/>
+        <image name="yuyue_btn.png" width="914" height="127"/>
+    </resources>
+</document>

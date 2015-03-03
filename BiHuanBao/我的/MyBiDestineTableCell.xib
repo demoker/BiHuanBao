@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MyBiDestineTableCell" rowHeight="40" id="KGk-i7-Jjw" customClass="MyBiDestineTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rus-VX-Qvi">
+                        <rect key="frame" x="10" y="0.0" width="300" height="40"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sbyy_green_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="Idx-MP-Yl5">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="40"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="比利沙美发沙龙宝街店" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QcG-E8-NNb">
+                                <rect key="frame" x="8" y="9" width="140" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.34509803921568627" green="0.67843137254901964" blue="0.40784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="比特币已送完，活动已结束" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7M-hM-9C7">
+                                <rect key="frame" x="163" y="9" width="120" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="fcG-AJ-1d9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.49909318749999998" green="1" blue="0.38796824000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Idx-MP-Yl5" firstAttribute="leading" secondItem="Rus-VX-Qvi" secondAttribute="leading" id="3mr-f1-jbY"/>
+                            <constraint firstAttribute="trailing" secondItem="Idx-MP-Yl5" secondAttribute="trailing" id="6ay-gs-kbO"/>
+                            <constraint firstItem="t7M-hM-9C7" firstAttribute="top" secondItem="Rus-VX-Qvi" secondAttribute="top" constant="9" id="9Cd-oK-0AF"/>
+                            <constraint firstAttribute="bottom" secondItem="t7M-hM-9C7" secondAttribute="bottom" constant="10" id="YCZ-sE-xfk"/>
+                            <constraint firstAttribute="bottom" secondItem="Idx-MP-Yl5" secondAttribute="bottom" id="hSI-tN-AWR"/>
+                            <constraint firstItem="Idx-MP-Yl5" firstAttribute="top" secondItem="Rus-VX-Qvi" secondAttribute="top" id="mYM-2P-avw"/>
+                            <constraint firstAttribute="trailing" secondItem="t7M-hM-9C7" secondAttribute="trailing" constant="17" id="oDz-RB-P8I"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lud-yR-smq">
+                        <rect key="frame" x="299" y="10" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="DJr-dz-5UJ"/>
+                            <constraint firstAttribute="width" constant="20" id="qDX-Ea-6XT"/>
+                        </constraints>
+                        <state key="normal" title="Button" backgroundImage="sbyy_green_delete_icon.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="Rus-VX-Qvi" secondAttribute="trailing" constant="2" id="FWm-nD-kH5"/>
+                    <constraint firstItem="lud-yR-smq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="FpI-kk-6ZS"/>
+                    <constraint firstItem="Rus-VX-Qvi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="OUW-Pj-BoT"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Rus-VX-Qvi" secondAttribute="bottom" constant="-8.5" id="dDr-rW-XFT"/>
+                    <constraint firstItem="Rus-VX-Qvi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="ncp-Dr-8td"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="lud-yR-smq" secondAttribute="trailing" constant="-7" id="pI1-aY-2sF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bg_img" destination="Idx-MP-Yl5" id="Qao-bn-gTd"/>
+                <outlet property="content_result" destination="t7M-hM-9C7" id="RdX-oj-8vL"/>
+                <outlet property="corp_name" destination="QcG-E8-NNb" id="9sH-dG-Ns7"/>
+                <outlet property="delete_btn" destination="lud-yR-smq" id="m3m-cB-Jik"/>
+            </connections>
+            <point key="canvasLocation" x="176" y="197"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="sbyy_green_bg.png" width="947" height="103"/>
+        <image name="sbyy_green_delete_icon.png" width="41" height="41"/>
+    </resources>
+</document>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyCouponViewController">
+            <connections>
+                <outlet property="did_use_btn" destination="lCm-B5-cS0" id="JpH-B2-tf4"/>
+                <outlet property="no_use_btn" destination="Rmw-RY-jMp" id="tWo-04-2Hs"/>
+                <outlet property="operationView" destination="SJP-wt-gmM" id="IgC-LU-fPB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SJP-wt-gmM">
+                    <rect key="frame" x="0.0" y="64" width="320" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCm-B5-cS0">
+                            <rect key="frame" x="162" y="10" width="152.5" height="30"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                            <state key="normal" title="已使用的券" backgroundImage="rr.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rmw-RY-jMp">
+                            <rect key="frame" x="5" y="10" width="152.5" height="30"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                            <state key="normal" title="未使用的券" backgroundImage="l.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="3rR-uS-8J2"/>
+                        <constraint firstAttribute="bottom" secondItem="Rmw-RY-jMp" secondAttribute="bottom" constant="10" id="4UI-LK-EoL"/>
+                        <constraint firstItem="lCm-B5-cS0" firstAttribute="top" secondItem="SJP-wt-gmM" secondAttribute="top" constant="10" id="6zH-Qb-eb2"/>
+                        <constraint firstAttribute="bottom" secondItem="lCm-B5-cS0" secondAttribute="bottom" constant="10" id="Qpu-RD-xZo"/>
+                        <constraint firstAttribute="trailing" secondItem="lCm-B5-cS0" secondAttribute="trailing" constant="5" id="b6K-pW-hy4"/>
+                        <constraint firstItem="Rmw-RY-jMp" firstAttribute="top" secondItem="SJP-wt-gmM" secondAttribute="top" constant="10" id="bMi-ts-Eb8"/>
+                        <constraint firstItem="lCm-B5-cS0" firstAttribute="width" secondItem="Rmw-RY-jMp" secondAttribute="width" id="hOb-AY-BbY"/>
+                        <constraint firstItem="Rmw-RY-jMp" firstAttribute="leading" secondItem="SJP-wt-gmM" secondAttribute="leading" constant="5" id="t9z-rZ-9SO"/>
+                        <constraint firstItem="lCm-B5-cS0" firstAttribute="leading" secondItem="Rmw-RY-jMp" secondAttribute="trailing" constant="5" id="uA6-4R-pBg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="SJP-wt-gmM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SSK-9q-boE"/>
+                <constraint firstItem="SJP-wt-gmM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="qnK-DP-mCf"/>
+                <constraint firstAttribute="trailing" secondItem="SJP-wt-gmM" secondAttribute="trailing" id="t1L-Bu-SQP"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="205" y="216"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="l.png" width="518" height="82"/>
+        <image name="rr.png" width="518" height="82"/>
+    </resources>
+</document>
